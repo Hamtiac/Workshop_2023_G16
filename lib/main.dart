@@ -1,12 +1,9 @@
-import 'package:db_workshop/globals/asset.dart';
 import 'package:flutter/material.dart';
+import 'package:sqflite/sqflite.dart';
 import 'dbprovider.dart';
-import 'package:sqflite_common_ffi/sqflite_ffi.dart';
-import 'activitypage.dart';
+import 'pages/activitypage/activitypage.dart';
 
 void main() async {
-  sqfliteFfiInit();
-  databaseFactory = databaseFactoryFfi;
   runApp(const MyApp());
   dbinit();
 }

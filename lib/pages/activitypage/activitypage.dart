@@ -1,6 +1,6 @@
-import 'package:db_workshop/widget/activitycard.dart';
 import 'package:flutter/material.dart';
-import 'globals/asset.dart';
+import '../../globals/asset.dart';
+import '../../widget/activitycard.dart';
 
 class ActivityPage extends StatefulWidget{
 
@@ -43,8 +43,8 @@ class _ActivityPageState extends State<ActivityPage>{
           ),
           Column(
             children: [
-              StackWidget(activityName: 'Dîner à la maison chez Philippe-Didier'),
-              StackWidget(activityName: 'Dîner à la maison chez Philippe-Didier')
+              StackWidget(activitiesName: 'Dîner à la maison chez Philippe-Didier'),
+              StackWidget(activitiesName: 'Dîner à la maison chez Philippe-Didier')
             ],
           ),
           ],

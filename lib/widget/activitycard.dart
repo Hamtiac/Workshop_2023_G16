@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import '../globals/asset.dart';
 
 class StackWidget extends StatelessWidget{
-  final String activityName;
+  final String activitiesName;
 
-  const StackWidget({super.key, required this.activityName});
+  const StackWidget({super.key, required this.activitiesName});
 
   Widget build(BuildContext context){
     return InkWell(
@@ -33,7 +33,7 @@ class StackWidget extends StatelessWidget{
                     color: Color.fromRGBO(255, 255, 255, 0.7),
                     child: Container(
                       padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
-                      child: Text(activityName)),
+                      child: Text(activitiesName)),
                   )
                 ],
               ),
