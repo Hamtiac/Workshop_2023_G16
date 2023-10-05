@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../globals/asset.dart';
 import '../../widget/activitycard.dart';
+import '../searchactivitypage/searchactivity.dart';
 
 class ActivityPage extends StatefulWidget{
 
@@ -27,9 +28,15 @@ class _ActivityPageState extends State<ActivityPage>{
             mainAxisAlignment: MainAxisAlignment.center ,
             children: [
               Padding(padding: EdgeInsets.all(10),
-              child: ElevatedButton(onPressed: () {},
-              style: ButtonStyle(backgroundColor: MaterialStatePropertyAll(Colors.orange)),
-              child: Text('Rechercher une activitée'),
+              child: ElevatedButton(onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => SearchActivityPage()));
+              },
+              style: ButtonStyle(backgroundColor: MaterialStatePropertyAll(Colors.orange),
+              shape: MaterialStatePropertyAll(RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(5))))
+              ),
+              child: Text('Rechercher une activitée',
+              style: TextStyle(color: Colors.black),
+              ),
               )
               )
             ],
