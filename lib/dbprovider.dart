@@ -11,10 +11,8 @@ var activitetest2 = const Activite(id: 2, title: 'Dîner à la maison', descript
 void dbinit() async {
   int? count;
 
-  print(join(await getDatabasesPath(), 'demo_db6.db'));
-
   final database = await openDatabase(
-    join(await getDatabasesPath(), 'demo_db6.db'),
+    join(await getDatabasesPath(), 'genoli_db.db'),
     onCreate: (db, version) async {
       await db.execute('''CREATE TABLE IF NOT EXISTS user(id INTEGER PRIMARY KEY, name TEXT, username TEXT, password TEXT, type TEXT);''');
       await db.execute('''CREATE TABLE IF NOT EXISTS activite(id INTEGER PRIMARY KEY, title TEXT, description TEXT, type TEXT);''');

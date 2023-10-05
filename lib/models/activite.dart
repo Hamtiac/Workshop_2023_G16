@@ -7,6 +7,6 @@ class Activite {
   const Activite({required this.id, required this.title, required this.description, required this.type});
 
   Map<String, dynamic> toMap() {
-    return {'id': id, 'name': title, 'description': description, 'type': type};
+    return {'id': id, 'title': title, 'description': description, 'type': type};
   }
 }
