@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:workshop_2023/pages/login/login.dart';
+import 'dbprovider.dart';
 
 void main() {
   runApp(const MyApp());
+  dbinit();
 }
 
 class MyApp extends StatelessWidget {
