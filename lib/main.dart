@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:workshop_2023/pages/homePageOld.dart';
 import 'package:workshop_2023/pages/login/login.dart';
 import 'dbprovider.dart';
 
@@ -13,12 +14,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
-      home: const LoginPage(),
+      home: const HomePageOld(),
     );
   }
 }

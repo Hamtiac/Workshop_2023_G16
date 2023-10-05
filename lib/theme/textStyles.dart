@@ -13,3 +13,10 @@ TextStyle textFieldTextStyle = TextStyle(
   color: title,
   fontSize: 16,
 );
+
+TextStyle appBarTitle = TextStyle(
+  fontFamily: 'Anonymous Pro',
+  color: title,
+  fontWeight: FontWeight.w600,
+  fontSize: 20,
+);
