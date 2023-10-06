@@ -24,5 +24,5 @@ TextStyle chooseCard = TextStyle(
   fontFamily: 'Anonymous Pro',
   color: white,
   fontWeight: FontWeight.w600,
-  fontSize: 15,
+  fontSize: 18,
 );

@@ -13,9 +13,19 @@ class HomePageOld extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text(
-            "Bienvenue Philippe Didier",
-            style: appBarTitle,
+          title: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                "Bienvenue Philippe Didier",
+                style: appBarTitle,
+              ),
+              CircleAvatar(
+                  radius: 20,
+                  backgroundColor: Colors.red,
+                  child: IconButton(
+                      onPressed: null, icon: Icon(Icons.person_2_outlined)))
+            ],
           ),
           backgroundColor: yellow,
         ),
