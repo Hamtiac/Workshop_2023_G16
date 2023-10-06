@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:workshop_2023/pages/homePageOld.dart';
 import 'package:workshop_2023/pages/login/login.dart';
 import 'package:workshop_2023/pages/oldPeople/activityPlace.dart';
 import 'package:workshop_2023/pages/youngPeople/acitvityPage.dart';
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
