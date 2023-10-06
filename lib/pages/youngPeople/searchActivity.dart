@@ -6,6 +6,8 @@ import 'package:workshop_2023/theme/textStyles.dart';
 import 'package:workshop_2023/widgets/buttons/genericOutlinedButton.dart';
 import 'package:workshop_2023/widgets/cards/activityCardYoung.dart';
 
+import 'activityInfo.dart';
+
 class SearchActivityPage extends StatefulWidget {
   const SearchActivityPage({super.key});
 
@@ -79,8 +81,16 @@ class _SearchActivityPage extends State<SearchActivityPage> {
               visible: isExt,
               child: Column(
                 children: [
-                  ActivityCardYoung(activitiesName: 'Balade en forêt avec Philippe-Didier', Image: tmpImageString),
-                  ActivityCardYoung(activitiesName: 'Sortie au cinéma avec Martine', Image: tmpImageString),
+                  ActivityCardYoung(
+                    activitiesName: 'Balade en forêt avec Philippe-Didier',
+                    Image: tmpImageString,
+                    onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => ActivityInfo(title: "titre de l'activité"))),
+                  ),
+                  ActivityCardYoung(
+                    activitiesName: 'Sortie au cinéma avec Martine',
+                    Image: tmpImageString,
+                    onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => ActivityInfo(title: "titre de l'activité"))),
+                  ),
                 ],
               ),
             ),
@@ -88,8 +98,16 @@ class _SearchActivityPage extends State<SearchActivityPage> {
                 visible: !isExt,
                 child: Column(
                   children: [
-                    ActivityCardYoung(activitiesName: 'Raclette chez Gérard', Image: tmpImageString),
-                    ActivityCardYoung(activitiesName: 'Soirée Betflix chez Irène', Image: tmpImageString),
+                    ActivityCardYoung(
+                      activitiesName: 'Raclette chez Gérard',
+                      Image: tmpImageString,
+                      onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => ActivityInfo(title: "titre de l'activité"))),
+                    ),
+                    ActivityCardYoung(
+                      activitiesName: 'Soirée Betflix chez Irène',
+                      Image: tmpImageString,
+                      onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => ActivityInfo(title: "titre de l'activité"))),
+                    ),
                   ],
                 ))
           ],

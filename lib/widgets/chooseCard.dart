@@ -3,14 +3,14 @@ import 'package:workshop_2023/theme/textStyles.dart';
 
 class ChooseCard extends StatelessWidget {
   final String activitiesName;
+  final VoidCallback? onPressed;
   final String activitieImage;
 
-  const ChooseCard(
-      {super.key, required this.activitiesName, required this.activitieImage});
+  const ChooseCard({super.key, required this.activitiesName, required this.activitieImage, this.onPressed});
 
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: onPressed,
       borderRadius: BorderRadius.circular(5),
       child: Container(
         padding: EdgeInsets.all(10),

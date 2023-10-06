@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:workshop_2023/globals/asset.dart';
 import 'package:workshop_2023/pages/login/textFieldLogin.dart';
 import 'package:workshop_2023/pages/login/textFieldPassword.dart';
+import 'package:workshop_2023/pages/oldPeople/homePageOld.dart';
+import 'package:workshop_2023/pages/youngPeople/acitvityPage.dart';
 import 'package:workshop_2023/theme/colors.dart';
 import 'package:workshop_2023/widgets/buttons/genericButton.dart';
 
@@ -52,9 +54,13 @@ class LoginPage extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 15),
           child: Column(
             children: [
-              GenericButton(title: 'Me connecter en tant que "junior"', color: yellow),
+              GenericButton(title: 'Me connecter en tant que "junior"', color: yellow, onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => ActivityPage()))),
               const SizedBox(height: 10),
-              GenericButton(title: 'Me connecter en tant que "senior"', color: red),
+              GenericButton(
+                title: 'Me connecter en tant que "senior"',
+                color: red,
+                onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => const HomePageOld())),
+              ),
             ],
           ),
         ),

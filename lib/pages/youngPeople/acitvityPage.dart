@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:workshop_2023/pages/youngPeople/activityInfo.dart';
+import 'package:workshop_2023/pages/youngPeople/searchActivity.dart';
 import 'package:workshop_2023/theme/colors.dart';
 import 'package:workshop_2023/theme/textStyles.dart';
 import 'package:workshop_2023/widgets/buttons/genericButton.dart';
@@ -36,7 +38,7 @@ class _ActivityPageState extends State<ActivityPage> {
                   child: GenericButton(
                     color: yellow,
                     title: "Rechercher une activitée",
-                    onPressed: () {},
+                    onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => const SearchActivityPage())),
                   ),
                 )
               ],
@@ -53,14 +55,16 @@ class _ActivityPageState extends State<ActivityPage> {
                 )
               ],
             ),
-            const Column(
+            Column(
               children: [
                 ActivityCardYoung(
+                  onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => ActivityInfo(title: "titre de l'activité"))),
                   activitiesName: 'Dîner à la maison chez Philippe-Didier',
                   Image:
                       "https://media.istockphoto.com/id/900816038/fr/photo/personnel-travaillant-derri%C3%A8re-le-comptoir-%C3%A0-caf%C3%A9-bien-remplie.jpg?s=612x612&w=0&k=20&c=P0Vhl1eCuG6EoNiWQqWcgTy0zTlPiRdOhPMlf7CqIMw=",
                 ),
                 ActivityCardYoung(
+                  onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => ActivityInfo(title: "titre de l'activité"))),
                   activitiesName: 'Dîner à la maison chez Philippe-Didier',
                   Image:
                       "https://media.istockphoto.com/id/900816038/fr/photo/personnel-travaillant-derri%C3%A8re-le-comptoir-%C3%A0-caf%C3%A9-bien-remplie.jpg?s=612x612&w=0&k=20&c=P0Vhl1eCuG6EoNiWQqWcgTy0zTlPiRdOhPMlf7CqIMw=",
