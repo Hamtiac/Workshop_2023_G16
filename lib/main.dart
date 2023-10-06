@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:sqflite/sqflite.dart';
+import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 import 'dbprovider.dart';
-import 'pages/activitypage/activitypage.dart';
+import 'pages/homepage/homepage.dart';
 
 void main() async {
+  sqfliteFfiInit();
+  databaseFactory = databaseFactoryFfi;
   runApp(const MyApp());
   dbinit();
 }

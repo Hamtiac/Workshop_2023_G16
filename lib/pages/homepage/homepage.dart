@@ -1,3 +1,5 @@
+import 'package:db_workshop/theme/colors.dart';
+import 'package:db_workshop/theme/textStyles.dart';
 import 'package:flutter/material.dart';
 import '../../globals/asset.dart';
 import '../../widget/activitycard.dart';
@@ -15,8 +17,8 @@ class _ActivityPageState extends State<ActivityPage>{
   Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text('Hello Melanie !'),
+        backgroundColor: yellow,
+        title: Text('Hello Melanie !', style: appBarTitle,),
         actions: [
           IconButton(onPressed: (){}, icon: const Icon(Icons.email))
         ],
@@ -31,7 +33,7 @@ class _ActivityPageState extends State<ActivityPage>{
               child: ElevatedButton(onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) => SearchActivityPage()));
               },
-              style: ButtonStyle(backgroundColor: MaterialStatePropertyAll(Colors.orange),
+              style: ButtonStyle(backgroundColor: MaterialStatePropertyAll(yellow),
               shape: MaterialStatePropertyAll(RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(5))))
               ),
               child: Text('Rechercher une activitée',

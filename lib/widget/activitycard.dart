@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../globals/asset.dart';
+import '../pages/activityinfo/activityinfo.dart';
 
 class StackWidget extends StatelessWidget{
   final String activitiesName;
@@ -8,7 +9,9 @@ class StackWidget extends StatelessWidget{
 
   Widget build(BuildContext context){
     return InkWell(
-      onTap: () {},
+      onTap: () {
+        Navigator.push(context, MaterialPageRoute(builder: (context) => ActivityInfo(title: activitiesName,)));
+      },
       borderRadius: BorderRadius.circular(5),
       child: Container(
               padding: EdgeInsets.all(10),
