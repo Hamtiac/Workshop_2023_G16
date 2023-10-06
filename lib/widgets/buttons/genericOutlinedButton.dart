@@ -26,13 +26,13 @@ class _GenericOutilnedButtonState extends State<GenericOutilnedButton> {
             overlayColor: MaterialStatePropertyAll(widget.color),
             side: MaterialStatePropertyAll(BorderSide(color: widget.color, width: 2.0)),
             shape: const MaterialStatePropertyAll(RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(5))))),
-        child: Container(
+        child: SizedBox(
           height: 75,
           width: double.infinity,
           child: Center(
             child: Text(
               widget.buttonTitle,
-              style: buttonTextStyle.copyWith(color: title),
+              style: buttonTextStyle.copyWith(color: widget.isSelected ? white : title),
               textAlign: TextAlign.center,
             ),
           ),

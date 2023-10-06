@@ -4,7 +4,7 @@ import 'package:workshop_2023/pages/oldPeople/bottomAppBar.dart';
 import 'package:workshop_2023/theme/colors.dart';
 import 'package:workshop_2023/theme/textStyles.dart';
 import 'package:workshop_2023/widgets/buttons/genericButton.dart';
-import 'package:workshop_2023/widgets/genericOutlinedButton.dart';
+import 'package:workshop_2023/widgets/buttons/genericOutlinedButton.dart';
 
 class ActivityPlacePage extends StatefulWidget {
   const ActivityPlacePage({super.key, required this.title});

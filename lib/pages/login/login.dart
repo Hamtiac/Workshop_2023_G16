@@ -28,7 +28,7 @@ class LoginPage extends StatelessWidget {
                   width: 250,
                   height: 166,
                 ),
-                const SizedBox(height: 150),
+                const SizedBox(height: 100),
                 Form(
                   key: Key,
                   child: Column(
@@ -46,15 +46,15 @@ class LoginPage extends StatelessWidget {
       ),
       bottomNavigationBar: BottomAppBar(
         elevation: 0,
-        height: 175,
+        height: 230,
         color: Colors.transparent,
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 15),
           child: Column(
             children: [
-              GenericButton(title: "M'inscrire", color: yellow),
-              const SizedBox(height: 20),
-              GenericButton(title: "Me connecter", color: red),
+              GenericButton(title: 'Me connecter en tant que "junior"', color: yellow),
+              const SizedBox(height: 10),
+              GenericButton(title: 'Me connecter en tant que "senior"', color: red),
             ],
           ),
         ),
