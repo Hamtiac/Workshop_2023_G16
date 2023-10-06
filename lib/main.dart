@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:workshop_2023/pages/login/login.dart';
+import 'package:workshop_2023/pages/oldPeople/activityPlace.dart';
 import 'dbprovider.dart';
 
 void main() {
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
-      home: const LoginPage(),
+      home: activityPlacePage(title: "Balade en parc"),
     );
   }
 }
