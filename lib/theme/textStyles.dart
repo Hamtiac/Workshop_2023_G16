@@ -5,7 +5,7 @@ TextStyle buttonTextStyle = TextStyle(
   fontFamily: 'Anonymous Pro',
   color: white,
   fontWeight: FontWeight.w600,
-  fontSize: 24,
+  fontSize: 20,
 );
 
 TextStyle textFieldTextStyle = TextStyle(
@@ -19,4 +19,10 @@ TextStyle appBarTitle = TextStyle(
   color: title,
   fontWeight: FontWeight.w600,
   fontSize: 20,
+);
+TextStyle chooseCard = TextStyle(
+  fontFamily: 'Anonymous Pro',
+  color: white,
+  fontWeight: FontWeight.w600,
+  fontSize: 15,
 );

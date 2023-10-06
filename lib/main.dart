@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:workshop_2023/pages/homePageOld.dart';
 import 'package:workshop_2023/pages/login/login.dart';
+import 'package:workshop_2023/widgets/chooseCard.dart';
 import 'dbprovider.dart';
 
 void main() {
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
-      home: const HomePageOld(),
+      home: HomePageOld(),
     );
   }
 }
