@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:workshop_2023/pages/login/login.dart';
 import 'package:workshop_2023/pages/oldPeople/activityPlace.dart';
 import 'package:workshop_2023/pages/youngPeople/acitvityPage.dart';
+import 'package:workshop_2023/pages/youngPeople/activityInfo.dart';
 import 'dbprovider.dart';
 import 'pages/youngPeople/searchActivity.dart';
 
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
-      home: SearchActivityPage(),
+      home: ActivityInfo(title: "nom de l'activité"),
     );
   }
 }
