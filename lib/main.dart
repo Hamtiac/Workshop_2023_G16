@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
-      home: activityPlacePage(title: "Balade en parc"),
+      home: ActivityPlacePage(title: "Balade en parc"),
     );
   }
 }
