@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:workshop_2023/pages/homePageOld.dart';
 import 'package:workshop_2023/pages/login/login.dart';
-import 'package:workshop_2023/widgets/chooseCard.dart';
+import 'package:workshop_2023/pages/oldPeople/activityPlace.dart';
+import 'package:workshop_2023/pages/youngPeople/acitvityPage.dart';
+import 'package:workshop_2023/pages/youngPeople/activityInfo.dart';
 import 'dbprovider.dart';
+import 'pages/youngPeople/searchActivity.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,11 +20,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
-      home: HomePageOld(),
+      home: ActivityInfo(title: "nom de l'activité"),
     );
   }
 }
